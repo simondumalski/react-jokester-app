@@ -1,5 +1,5 @@
 import Joke from "./Joke";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function App() {
   const [jokes, setJokes] = useState([]);
@@ -12,8 +12,6 @@ function App() {
     setJoke("");
     setPunchLine("");
   };
-
-  useEffect(() => {}, [jokes]);
 
   return (
     <div className="App">
